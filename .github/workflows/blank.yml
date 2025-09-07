@@ -33,6 +33,6 @@ jobs:
         run: |
           echo " Platform ${{ env.PLATFORM_ID }}"
           echo " Account ${{ env.ACCOUNT_ID }}"
+      - name: "Es aws"
         if: ${{ env.PLATFORM_ID == 'aws' }}
-      - name: "No es aws"
         run: echo "No es aws"
